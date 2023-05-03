@@ -13,3 +13,8 @@ body {
 .nav-link {
     font-weight: bold;
 }
+
+.card-img-top {
+    width: 75%;
+    weight 75%
+}
