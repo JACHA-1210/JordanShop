@@ -3,9 +3,9 @@ app = Flask(__name__)
 
 products = [
     {
-        "name": "Air Jordan 1 Retro High OG",
-        "image": "img/air-jordan-1.jpg",
-        "description": "Las Air Jordan 1 Retro High OG son las zapatillas que empezaron todo en 1985. La versión actual conserva el diseño icónico de alta calidad de las originales y añade características modernas para una mayor comodidad y durabilidad.",
+        "name": "Air Jordan 4 Retro PSG",
+        "image": "img/jordan-retro-4.jpg",
+        "description": "Las Air Jordan 4 Retro PSG son las zapatillas que empezaron todo en 1985. La versión actual conserva el diseño icónico de alta calidad de las originales y añade características modernas para una mayor comodidad y durabilidad.",
         "price": "200€"
 },
 {
