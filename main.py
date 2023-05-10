@@ -51,8 +51,5 @@ def jordan_1_low():
 def cuidados_nike_air_jordan():
     return render_template('cuidados_nike_air_jordan.html')
 
-
-
-
 if __name__ == '__main__':
     app.run(debug=True)
