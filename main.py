@@ -28,12 +28,16 @@ def index():
     return render_template('index.html', products=products)
 
 @app.route('/air-jordan-1')
-def air_jordan_1():
+def jordan_4():
     return render_template('air_jordan_1.html')
 
 @app.route('/air-jordan-mid')
-def air_jordan_mid():
+def air_jordan_1():
     return render_template('air_jordan_mid.html')
+
+@app.route('/jordan_5_offwhite')
+def jordan_5_offwhite():
+    return render_template('jordan_5_offwhite.html')
 
 @app.route('/cuidados_nike_air_jordan')
 def cuidados_nike_air_jordan():
