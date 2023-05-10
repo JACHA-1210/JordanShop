@@ -21,7 +21,13 @@ products = [
 "image": "img/jordan-retro-5.jpg",
 "description": "Este lanzamiento rinde homenaje a los primeros Jordan que Virgil tuvo, los Air Jordan 5. De una manera tradicional, Virgil rediseñó esta silueta clásica subrayando la importancia de la tecnología Nike Air.Estos Jordan 5 están confeccionados con un upper de malla Sail con paneles de red translúcidos e inserciones por todo el sneaker.",
 "price": "110€"
-}
+},
+{
+"name": "Air Jordan 1 Low",
+"image": "img/jordan-low.jpg",
+"description": "Las Air Jordan 1 Mid están confeccionadas con materiales de alta calidad y ofrecen una comodidad excepcional. Estas zapatillas son perfectas para el uso diario y para cualquier ocasión.",
+"price": "180€"
+},
 ]
 @app.route("/")
 def index():
