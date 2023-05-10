@@ -1,4 +1,11 @@
+
 {% extends 'base.html' %}
+from django.shortcuts import render
+
+def my_view(request):
+    images = ['ruta-de-la-imagen-1.jpg', 'ruta-de-la-imagen-2.jpg', 'ruta-de-la-imagen-3.jpg', 'ruta-de-la-imagen-4.jpg']
+    context = {'images': images}
+    return render(request, 'air_jordan_1.html', context)
 
 {% block content %}
   <div class="container my-5">
@@ -19,13 +26,24 @@
       </div>
     </div>
 
-    <h2 class="mt-5">Galeria</h2>
-    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 my-4">
-      {% for i in range(1, 7) %}
-      <div class="col">
-        <img src="{{ url_for('static', filename='img/jordan-retro-4-' ~ i ~ '.jpg') }}" class="img-fluid rounded" alt="Air Jordan 1">
-      </div>
-      {% endfor %}
+    <body>
+  <!-- otras secciones -->
+  <div class="gallery-container">
+    <div class="gallery">
+      <div><img src="static/img/air-jordan-mid.jpg"></div>
+      <div><img src="static/img/air-jordan-mid.jpg"></div>
+      <div><img src="static/img/air-jordan-mid.jpg"></div>
+      <div><img src="static/img/air-jordan-mid.jpg"></div>
+      <div><img src="static/img/air-jordan-mid.jpg"></div>
+      <div><img src="static/img/air-jordan-mid.jpg"></div>
+
+      <!-- añade tantas imágenes como quieras -->
     </div>
+    <div class="arrow arrow-left"><i class="fa fa-angle-left"></i></div>
+    <div class="arrow arrow-right"><i class="fa fa-angle-right"></i></div>
   </div>
+  <!-- otras secciones -->
+</body>
+
+ </div>
 {% endblock %}

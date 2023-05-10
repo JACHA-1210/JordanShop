@@ -1,15 +1,44 @@
-body {
-    padding-top: 5rem;
+.gallery-container {
+  position: relative;
+  margin: 0 auto;
+  max-width: 960px;
+  overflow: hidden;
 }
 
-.container {
-    max-width: 800px;
+.gallery {
+  display: flex;
+  flex-wrap: nowrap;
 }
 
-.navbar-brand {
-    font-weight: bold;
+.gallery img {
+  width: 100%;
+  height: auto;
 }
 
-.nav-link {
-    font-weight: bold;
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.arrow-left {
+  left: 0;
+}
+
+.arrow-right {
+  right: 0;
+}
+
+.slick-disabled {
+  opacity: 0.5;
+  cursor: default;
 }
