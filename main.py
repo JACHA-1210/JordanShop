@@ -44,9 +44,15 @@ def air_jordan_1():
 @app.route('/jordan_5_offwhite')
 def jordan_5_offwhite():
     return render_template('jordan_5_offwhite.html')
-
+@app.route('/jordan_1_low')
+def jordan_1_low():
+    return render_template('jordan_1_low.html')
 @app.route('/cuidados_nike_air_jordan')
 def cuidados_nike_air_jordan():
     return render_template('cuidados_nike_air_jordan.html')
+
+
+
+
 if __name__ == '__main__':
     app.run(debug=True)
