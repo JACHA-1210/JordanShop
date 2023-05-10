@@ -13,6 +13,12 @@ products = [
 "image": "img/air-jordan-mid.jpg",
 "description": "Las Air Jordan 1 Mid están confeccionadas con materiales de alta calidad y ofrecen una comodidad excepcional. Estas zapatillas son perfectas para el uso diario y para cualquier ocasión.",
 "price": "110€"
+},
+{
+"name": "Air Jordan 1 Mid",
+"image": "img/air-jordan-mid.jpg",
+"description": "Las Air Jordan 1 Mid están confeccionadas con materiales de alta calidad y ofrecen una comodidad excepcional. Estas zapatillas son perfectas para el uso diario y para cualquier ocasión.",
+"price": "110€"
 }
 ]
 @app.route("/")

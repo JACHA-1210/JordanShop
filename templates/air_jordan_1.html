@@ -1,6 +1,49 @@
+
 {% extends 'base.html' %}
+from django.shortcuts import render
+
+def my_view(request):
+    images = ['ruta-de-la-imagen-1.jpg', 'ruta-de-la-imagen-2.jpg', 'ruta-de-la-imagen-3.jpg', 'ruta-de-la-imagen-4.jpg']
+    context = {'images': images}
+    return render(request, 'air_jordan_1.html', context)
 
 {% block content %}
-<h1>Air Jordan 1</h1>
-<p>Air Jordan 1 es una línea de zapatillas deportivas diseñadas por Peter Moore para Michael Jordan en 1985. Desde entonces, se han convertido en un icono de la moda urbana y un artículo de colección para muchos aficionados a las zapatillas.</p>
+  <div class="container my-5">
+    <h1 class="text-center">Air Jordan 1</h1>
+     <p class="text-center lead">Las Air Jordan 1 fueron producidas por primera vez para Michael Jordan en 1984. Fueron diseñadas por Peter C. Moore.</p>
+    <div class="row">
+      <div class="col-md-6">
+        <img src="{{ url_for('static', filename='img/jordan-retro-4.jpg') }}" class="img-fluid rounded my-4" alt="Air Jordan 1">
+      </div>
+      <div class="col-md-6">
+        <h2>Features</h2>
+       <ul>
+      <li>Parte superior de cuero para mayor durabilidad y aspecto premium.</li>
+      <li>Unidad de Air-Sole encapsulada en el talón que proporciona amortiguación.</li>
+      <li>Suela exterior de goma sólida que proporciona durabilidad en una variedad de superficies.</li>
+      <li>Cuello y lengüeta acolchados para un ajuste cómodo.</li>
+    </ul>
+      </div>
+    </div>
+
+    <body>
+  <!-- otras secciones -->
+  <div class="gallery-container">
+    <div class="gallery">
+      <div><img src="static/img/air-jordan-mid.jpg"></div>
+      <div><img src="static/img/air-jordan-mid.jpg"></div>
+      <div><img src="static/img/air-jordan-mid.jpg"></div>
+      <div><img src="static/img/air-jordan-mid.jpg"></div>
+      <div><img src="static/img/air-jordan-mid.jpg"></div>
+      <div><img src="static/img/air-jordan-mid.jpg"></div>
+
+      <!-- añade tantas imágenes como quieras -->
+    </div>
+    <div class="arrow arrow-left"><i class="fa fa-angle-left"></i></div>
+    <div class="arrow arrow-right"><i class="fa fa-angle-right"></i></div>
+  </div>
+  <!-- otras secciones -->
+</body>
+
+ </div>
 {% endblock %}
