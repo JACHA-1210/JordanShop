@@ -1,4 +1,6 @@
 from flask import Flask, render_template, request
+
+
 app = Flask(__name__)
 
 products = [
@@ -33,5 +35,8 @@ def air_jordan_1():
 def air_jordan_mid():
     return render_template('air_jordan_mid.html')
 
+@app.route('/cuidados_nike_air_jordan')
+def cuidados_nike_air_jordan():
+    return render_template('cuidados_nike_air_jordan.html')
 if __name__ == '__main__':
     app.run(debug=True)

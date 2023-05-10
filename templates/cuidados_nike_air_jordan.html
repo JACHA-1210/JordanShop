@@ -1,0 +1,39 @@
+
+{% extends 'base.html' %}
+from django.shortcuts import render
+
+def my_view(request):
+    images = ['ruta-de-la-imagen-1.jpg', 'ruta-de-la-imagen-2.jpg', 'ruta-de-la-imagen-3.jpg', 'ruta-de-la-imagen-4.jpg']
+    context = {'images': images}
+    return render(request, 'air_jordan_1.html', context)
+
+{% block content %}
+
+<div class="container my-5">
+  <h1 class="text-center">Consejos y cuidados de las Nike Air Jordan</h1>
+  <div class="row">
+    <div class="col-md-8 mx-auto">
+      <img src="{{ url_for('static', filename='img/air-jordan-care.jpg') }}" class="img-fluid rounded my-4" alt="Cuidados de las Nike Air Jordan">
+      <p class="lead">Las Nike Air Jordan son zapatillas de alta calidad que necesitan ciertos cuidados para mantener su aspecto y durabilidad a lo largo del tiempo. En esta guía te mostraremos algunos consejos y trucos para cuidar tus zapatillas y hacer que duren mucho más.</p>
+      <h2 class="my-4">Limpieza y mantenimiento</h2>
+      <p class="lead">Una de las claves para mantener tus Nike Air Jordan en buen estado es mantenerlas limpias. Aquí te mostramos algunos consejos para limpiar tus zapatillas de forma segura:</p>
+      <ul class="my-4">
+        <li>Quita los cordones y lávalos a mano con agua y jabón.</li>
+        <li>Limpia la superficie de las zapatillas con un cepillo suave o una esponja y agua tibia.</li>
+        <li>Si hay manchas difíciles, puedes usar un limpiador especial para zapatillas o una mezcla de agua y vinagre.</li>
+        <li>Para secar tus zapatillas, utiliza papel de periódico o toallas de papel para absorber el exceso de humedad. No uses la secadora ni los expongas directamente al sol o al calor.</li>
+      </ul>
+      <h2 class="my-4">Protección y almacenamiento</h2>
+      <p class="lead">Además de mantener tus Nike Air Jordan limpias, también es importante protegerlas y almacenarlas adecuadamente para prolongar su vida útil. Aquí te damos algunos consejos:</p>
+      <ul class="my-4">
+        <li>Protege tus zapatillas de la lluvia, el barro y otras condiciones climáticas adversas utilizando un protector de zapatillas.</li>
+        <li>Almacena tus zapatillas en un lugar fresco y seco, preferiblemente en una caja de zapatos o en un armario.</li>
+        <li>Para mantener la forma de tus zapatillas, puedes rellenarlas con papel o con un producto especial para este fin.</li>
+        <li>Si vas a guardar tus zapatillas durante un largo periodo de tiempo, asegúrate de limpiarlas y secarlas adecuadamente antes de hacerlo.</li>
+      </ul>
+      <p class="lead">Siguiendo estos consejos y cuidados, podrás mantener tus Nike Air Jordan en buen estado durante mucho más tiempo y disfrutar de ellas en cualquier ocasión.</p>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
