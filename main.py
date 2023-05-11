@@ -25,7 +25,7 @@ products = [
 {
 "name": "Air Jordan 1 Low",
 "image": "img/jordan-low.jpg",
-"description": "Las Air Jordan 1 Mid están confeccionadas con materiales de alta calidad y ofrecen una comodidad excepcional. Estas zapatillas son perfectas para el uso diario y para cualquier ocasión.",
+"description": "Las Jordan 1 Low conservan gran parte del diseño y los elementos característicos de las Jordan 1 originales, pero presentan un perfil más bajo que las hace perfectas para el uso diario. Estas zapatillas ofrecen comodidad y estilo sin comprometer el legado y la estética distintiva de las Jordan.",
 "price": "180€"
 },
 ]
